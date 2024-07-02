@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    font-family: 'nunito', Helvetica, sans-serif;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-bg {
+    background-color:#ffffff;
+
+}
+
+.header{
+    display:flex;
+    flex: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.header-menu a {
+    color: #000000;
+    display: inline-block;
+    padding: 16px 0px;
+    font-size: 18px;
+    position: relative;
+}
+
+.header-menu a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #000000;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.header-menu a:hover:after {
+    width: 100%;
+}
+
+.stacked-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .stacked-image {
+    width: 100%;
+  }
+  
+  .stacked-image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -6px;
+  }
+
+@media (max-width: 800px) {
+    .header-menu {
+        gap: 0px;
+    }
+    .header-menu a {
+        padding: 8px 12px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .header-menu a {
+        background: #c9c9c9;
+        padding:10px 12px;
+        border-radius: 4px;
+    }
+    .header-menu a:hover {
+        background-color: #aaa9a9;
+    }
+    .header a:after {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .header-menu {
+        gap: 0px;
+    }
+    .header-menu a {
+        padding: 8px 12px;
+        font-size: 10px;
+        margin-left: 8px;
+    }
+    }
+
+    .img1 {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 700px) {
+        .header-menu {
+            gap: 0px;
+        }
+        .header-menu a {
+            padding: 8px 12px;
+            font-size: 10px;
+            margin-left: 6px;
+        }
+        }
+        
+        @media (max-width: 660px) {
+
+            .header-menu a {
+                padding: 4px 8px;
+                font-size: 8px;
+                margin-left: 4px;
+            }
+            
+          }
